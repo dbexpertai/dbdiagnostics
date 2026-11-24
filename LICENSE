@@ -1,21 +1,131 @@
-MIT License
+dbexpert.ai — END USER LICENSE AGREEMENT
+=========================================
 
-Copyright (c) 2026 dbexpertai
+Product:   dbexpert.ai On-Prem (the "Software"), including the dbexpertAI
+           monitoring service, the setup program, the web console, bundled
+           detection and resolution content, and all updates supplied by
+           Uptimesoft Inc.
+Licensor:  Uptimesoft Inc., doing business as dbexpert.ai ("Uptimesoft",
+           "dbexpert.ai", "we", "us")
+Copyright: (c) 2024-2026 Uptimesoft Inc. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+THIS IS A PROPRIETARY, CLOSED-SOURCE PRODUCT. IT IS NOT OPEN SOURCE. IT IS
+LICENSED, NOT SOLD. BY INSTALLING, COPYING OR USING THE SOFTWARE YOU AGREE
+TO THE TERMS BELOW. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE SOFTWARE.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. GRANT OF LICENSE
+   Subject to this Agreement and to any order form, subscription or license
+   key issued to you, Uptimesoft grants you a limited, non-exclusive,
+   non-transferable, revocable license to install and use the Software, in
+   object-code form only, on systems you own or control, solely for
+   monitoring and diagnosing database servers for your own internal
+   business purposes, and only for the number of monitored targets and the
+   term authorized by your license key or subscription.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. RESTRICTIONS
+   Except to the extent expressly permitted by applicable law, you may not:
+   (a) copy, modify, translate, adapt or create derivative works of the
+       Software or of its detection/resolution content;
+   (b) reverse engineer, decompile, disassemble, decrypt or otherwise
+       attempt to derive the source code, detection logic, signed content,
+       encryption keys or data formats of the Software;
+   (c) sell, rent, lease, lend, sublicense, host, distribute or otherwise
+       make the Software (or any part of it, including the bundled
+       detection/resolution knowledge base) available to any third party;
+   (d) remove, obscure or alter any proprietary notice, license key, or
+       technical protection measure in the Software;
+   (e) circumvent or disable license enforcement, entitlement checks or
+       target limits;
+   (f) use the Software to build a competing product or service, or
+       publish benchmarks of the Software without our prior written
+       consent.
+
+3. OWNERSHIP
+   The Software, its detection and resolution taxonomy, signed content,
+   documentation and all intellectual-property rights in them are and
+   remain the exclusive property of Uptimesoft Inc. and its licensors. No
+   rights are granted except as expressly stated in this Agreement.
+
+4. THIRD-PARTY COMPONENTS
+   The Software includes third-party and open-source components that are
+   licensed under their own terms, which are listed in
+   THIRD_PARTY_NOTICES.txt and reproduced in the licenses/ directory
+   distributed with the Software. Those components are licensed to you
+   under their own licenses, not under this Agreement, and nothing in this
+   Agreement restricts rights granted to you by those licenses. Among
+   others, the Software bundles:
+     - Ollama (MIT License), a local model server;
+     - Microsoft Phi-3-mini-128k-instruct (MIT License), a language model
+       used by the local resolution agent and executed entirely on your
+       system;
+     - llama.cpp / ggml (MIT License), embedded in Ollama, and
+       llama-cpp-python (MIT License);
+     - PostgreSQL (PostgreSQL License), the local metrics store;
+     - NSSM (public domain), a Windows service wrapper;
+     - Microsoft ODBC Driver 18 for SQL Server and the Microsoft Visual
+       C++ Redistributable (the "Microsoft Components"), which are
+       Microsoft software redistributed under Microsoft's distribution
+       terms (see THIRD_PARTY_NOTICES.txt).
+   Microsoft Components. By installing the Software you accept the
+   Microsoft Software License Terms that accompany each Microsoft
+   Component. The Microsoft Components are licensed to you "AS IS";
+   Microsoft and its suppliers give no warranties and have no liability
+   for them, and the disclaimers and limitations in Sections 7 and 8
+   apply to Microsoft and its suppliers as third-party beneficiaries. You
+   may not modify the Microsoft Components, distribute them other than as
+   installed by the Software, or use them with software that would subject
+   them to an open-source license, and you may not use Microsoft's
+   trademarks to suggest the Software comes from or is endorsed by
+   Microsoft.
+
+5. DATA, LICENSE VALIDATION AND UPDATES
+   The Software may communicate with dbexpert.ai services to validate
+   license keys, report licensed-target usage and incident summaries, and
+   obtain updates, as described in the product documentation and
+   configurable in the product settings. Database credentials you
+   configure are stored locally and are not transmitted to dbexpert.ai.
+   The local language model runs on your system; prompts and findings
+   processed by it are not sent to dbexpert.ai or any model vendor.
+
+6. TERM AND TERMINATION
+   This Agreement is effective until terminated. It terminates
+   automatically if you breach any of its terms or when your subscription
+   or license key expires. Upon termination you must stop using the
+   Software and uninstall it. Sections 2, 3, 7, 8 and 9 survive
+   termination.
+
+7. DISCLAIMER OF WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF
+   ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND
+   NON-INFRINGEMENT. THE SOFTWARE PRODUCES AUTOMATED DIAGNOSTIC FINDINGS
+   AND MACHINE-GENERATED RECOMMENDATIONS; THEY ARE ADVISORY ONLY AND MUST
+   BE REVIEWED BY A QUALIFIED ADMINISTRATOR BEFORE ANY ACTION IS TAKEN ON
+   A PRODUCTION SYSTEM. UPTIMESOFT DOES NOT WARRANT THAT THE SOFTWARE WILL
+   DETECT EVERY ISSUE OR THREAT OR THAT ITS RECOMMENDATIONS ARE CORRECT,
+   COMPLETE OR SAFE FOR YOUR ENVIRONMENT.
+
+8. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL UPTIMESOFT INC. OR
+   ITS SUPPLIERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+   CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES, OR FOR LOSS OF DATA,
+   PROFITS, REVENUE OR BUSINESS, ARISING OUT OF OR RELATED TO THE SOFTWARE
+   OR THIS AGREEMENT, HOWEVER CAUSED. UPTIMESOFT'S TOTAL CUMULATIVE
+   LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE FEES YOU PAID FOR
+   THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
+
+9. GENERAL
+   This Agreement is governed by the laws of the State of Delaware, United
+   States of America, without regard to its conflict-of-laws rules, and
+   the state and federal courts located in the State of Delaware shall
+   have exclusive jurisdiction over any dispute arising out of or relating
+   to it, unless a signed agreement between you and Uptimesoft provides
+   otherwise, in which case that agreement prevails. The United Nations
+   Convention on Contracts for the International Sale of Goods does not
+   apply. If any provision is held unenforceable, the remainder stays in
+   effect. You may not assign this Agreement without our written consent.
+   This Agreement (together with any signed order form or subscription
+   terms) is the entire agreement between you and Uptimesoft Inc.
+   regarding the Software.
+
+Uptimesoft Inc. · https://dbexpert.ai · https://app.dbexpert.ai
