@@ -52,9 +52,10 @@ TO THE TERMS BELOW. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE SOFTWARE.
        level are included. Sections 7 and 8 apply in full;
    (e) a community key is for the person it was issued to. Use of a
        community key by anyone else is not covered by this Agreement and
-       gives that person no license. Installations activated with a
-       shared key nevertheless report to the key holder's dbexpert.ai
-       account, as described in Section 5;
+       gives that person no license. Installations that use a community
+       key are registered to the key holder's dbexpert.ai account,
+       whoever installed them, and report to that account only when the
+       online monitor is turned on, as described in Section 5;
    (f) Uptimesoft may, at its sole discretion, revoke a community key
        whose use shows patterns incompatible with the spirit of the
        Community Edition. Uptimesoft may, but need not, contact the key
@@ -154,22 +155,33 @@ TO THE TERMS BELOW. IF YOU DO NOT AGREE, DO NOT INSTALL OR USE THE SOFTWARE.
    Microsoft.
 
 5. DATA, LICENSE VALIDATION AND UPDATES
-   The Software may communicate with dbexpert.ai services to validate
-   license keys, to pair an installation with a dbexpert.ai account, to
-   report licensed-target usage, and to obtain updates. To pair, it sends
-   the license key and the installation's host name, machine fingerprint,
-   operating system and version.
+   License check. The Software communicates with dbexpert.ai services
+   automatically to validate license keys, to register (pair) an
+   installation with a dbexpert.ai account, and to obtain updates. For
+   this it sends the license key and the installation's host name,
+   machine identifier, operating system and version. If you obtain a
+   community key by a code sent to your e-mail address, it also sends
+   that e-mail address. The license check sends nothing about the
+   database servers the Software monitors.
 
-   Once paired, and unless you pause reporting in the product settings,
-   the Software sends the account, for the database servers it monitors:
-   diagnostic findings and the evidence for them, which may include rows
-   returned by its diagnostic queries, query text and other values those
-   queries return, and row counts; the results of its detection runs;
-   server identity and configuration information; performance metrics;
-   and forecasts. Pausing stops this reporting and the periodic license
-   check. It does not delete information already sent.
+   Online monitor. Sending monitoring results to a dbexpert.ai account
+   (the "online monitor") is OFF unless an administrator of the
+   installation turns it on in the product, and an administrator can
+   turn it off again at any time. While it is on, the Software sends the
+   account the results of its analysis of the database servers it
+   monitors: findings, counts, severities, detection results,
+   performance metrics and forecasts. Before anything is sent, server
+   addresses, logins and object names are replaced by stand-ins that the
+   installation generates; SQL is sent only as its shape, without the
+   values in it; and anything the Software does not recognize as safe to
+   send is withheld. The real names behind the stand-ins stay on the
+   installation. If the administrator enters the address of the
+   installation's console, that address is sent as well, so that the
+   online monitor can link back to the installation. Turning the online
+   monitor off stops this sending. It does not delete information
+   already sent.
 
-   Database credentials you configure are stored locally and are not
+   Database credentials you configure are stored locally and are never
    transmitted to dbexpert.ai.
    The local language model runs on your system; prompts and findings
    processed by it are not sent to dbexpert.ai or any model vendor.
