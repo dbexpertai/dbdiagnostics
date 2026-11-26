@@ -15,6 +15,7 @@ is proprietary; its source is not published.
 | Platform | Requires | Download |
 |---|---|---|
 | Windows | Windows Server 2019, 2022 or 2025 | [dbexpert for Windows](https://app.dbexpert.ai/api/downloads/public/windows) (ISO, about 5 GB) |
+| Ubuntu 26.04 LTS | x86_64 | [dbdiagnostics-ubuntu-26.04-x64.tar](https://github.com/dbexpertai/dbdiagnostics/releases/latest/download/dbdiagnostics-ubuntu-26.04-x64.tar) |
 | Ubuntu 24.04 LTS | x86_64 | [dbdiagnostics-ubuntu-x64.tar](https://github.com/dbexpertai/dbdiagnostics/releases/latest/download/dbdiagnostics-ubuntu-x64.tar) |
 | Ubuntu 22.04 LTS | x86_64 | [dbdiagnostics-ubuntu-22.04-x64.tar](https://github.com/dbexpertai/dbdiagnostics/releases/latest/download/dbdiagnostics-ubuntu-22.04-x64.tar) |
 | macOS | macOS 13 or later, Apple Silicon | [dbdiagnostics-macos-arm64.tar](https://github.com/dbexpertai/dbdiagnostics/releases/latest/download/dbdiagnostics-macos-arm64.tar) |
@@ -43,7 +44,9 @@ tar -xf dbdiagnostics-ubuntu-x64.tar -C ~/dbdiagnostics-install
 cd ~/dbdiagnostics-install && sudo ./setup-ubuntu.sh
 ```
 
-On Ubuntu 22.04 use `dbdiagnostics-ubuntu-22.04-x64.tar`. Then open `https://localhost:8081`.
+That is the Ubuntu 24.04 file. On Ubuntu 26.04 use `dbdiagnostics-ubuntu-26.04-x64.tar`, on 22.04 use
+`dbdiagnostics-ubuntu-22.04-x64.tar`; each Ubuntu version has its own build. Then open
+`https://localhost:8081`.
 
 ### macOS
 
